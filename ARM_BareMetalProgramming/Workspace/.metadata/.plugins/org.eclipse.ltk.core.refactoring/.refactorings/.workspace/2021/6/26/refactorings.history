@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;02_led_toggle2&apos; to &apos;02_led_toggle_struct&apos;" description="Rename resource &apos;02_led_toggle2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/02_led_toggle2" name="02_led_toggle_struct" stamp="1624628134642" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;02_led_toggle2&apos; to &apos;02_led_toggle_struct&apos;" description="Rename resource &apos;02_led_toggle2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/02_led_toggle2" name="02_led_toggle_struct" stamp="1624628134642" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;03_gpio_bsrr&apos; to &apos;04_gpio_bsrr&apos;" description="Rename resource &apos;03_gpio_bsrr&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/03_gpio_bsrr" name="04_gpio_bsrr" stamp="1624698230043" updateReferences="true"/>
 </session>
