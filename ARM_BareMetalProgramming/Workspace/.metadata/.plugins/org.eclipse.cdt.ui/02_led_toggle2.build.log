@@ -1,0 +1,19 @@
+19:03:06 **** Build of configuration Debug for project 02_led_toggle2 ****
+make -j4 all 
+arm-none-eabi-gcc -o "02_led_toggle2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\02_led_toggle2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_led_toggle2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_led_toggle2.elf
+ 
+arm-none-eabi-size   02_led_toggle2.elf 
+arm-none-eabi-objdump -h -S  02_led_toggle2.elf  > "02_led_toggle2.list"
+arm-none-eabi-objcopy  -O binary  02_led_toggle2.elf  "02_led_toggle2.bin"
+   text	   data	    bss	    dec	    hex	filename
+    760	      8	   1568	   2336	    920	02_led_toggle2.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_led_toggle2.bin
+Finished building: 02_led_toggle2.list
+ 
+ 
+
+19:03:07 Build Finished. 0 errors, 0 warnings. (took 1s.59ms)
+

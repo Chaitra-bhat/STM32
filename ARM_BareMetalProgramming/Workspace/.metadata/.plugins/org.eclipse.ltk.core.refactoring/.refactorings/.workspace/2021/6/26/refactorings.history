@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;02_led_toggle2&apos; to &apos;02_led_toggle_struct&apos;" description="Rename resource &apos;02_led_toggle2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/02_led_toggle2" name="02_led_toggle_struct" stamp="1624628134642" updateReferences="true"/>
+</session>
