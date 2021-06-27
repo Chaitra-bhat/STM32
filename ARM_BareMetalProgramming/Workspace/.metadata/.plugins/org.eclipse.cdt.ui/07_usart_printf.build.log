@@ -1,0 +1,20 @@
+17:38:13 **** Incremental Build of configuration Debug for project 07_usart_printf ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "07_usart_printf.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\07_usart_printf\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="07_usart_printf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 07_usart_printf.elf
+ 
+arm-none-eabi-objdump -h -S  07_usart_printf.elf  > "07_usart_printf.list"
+arm-none-eabi-objcopy  -O binary  07_usart_printf.elf  "07_usart_printf.bin"
+arm-none-eabi-size   07_usart_printf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5428	    108	   1596	   7132	   1bdc	07_usart_printf.elf
+Finished building: default.size.stdout
+ 
+Finished building: 07_usart_printf.bin
+ 
+Finished building: 07_usart_printf.list
+ 
+
+17:38:15 Build Finished. 0 errors, 0 warnings. (took 1s.915ms)
+

@@ -1,24 +1,28 @@
-15:31:01 **** Incremental Build of configuration Debug for project 05_gpio_button ****
+20:13:29 **** Incremental Build of configuration Debug for project 09_usart_rx ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "05_gpio_button.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\05_gpio_button\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_gpio_button.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 05_gpio_button.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "09_usart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\09_usart_rx\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_usart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_usart_rx.elf
  
-arm-none-eabi-objdump -h -S  05_gpio_button.elf  > "05_gpio_button.list"
-arm-none-eabi-objcopy  -O binary  05_gpio_button.elf  "05_gpio_button.bin"
-arm-none-eabi-size   05_gpio_button.elf 
+arm-none-eabi-objdump -h -S  09_usart_rx.elf  > "09_usart_rx.list"
+arm-none-eabi-objcopy  -O binary  09_usart_rx.elf  "09_usart_rx.bin"
+arm-none-eabi-size   09_usart_rx.elf 
    text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	05_gpio_button.elf
+   1140	      8	   1568	   2716	    a9c	09_usart_rx.elf
 Finished building: default.size.stdout
  
-Finished building: 05_gpio_button.bin
-Finished building: 05_gpio_button.list
+Finished building: 09_usart_rx.bin
+Finished building: 09_usart_rx.list
  
  
-15:31:07 **** Incremental Build of configuration Debug for project 05_gpio_button ****
+20:13:33 **** Incremental Build of configuration Debug for project 09_usart_rx ****
 make -j4 all 
-arm-none-eabi-size   05_gpio_button.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "09_usart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\09_usart_rx\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_usart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_usart_rx.elf
+ 
+arm-none-eabi-size   09_usart_rx.elf 
    text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	05_gpio_button.elf
+   1140	      8	   1568	   2716	    a9c	09_usart_rx.elf
 Finished building: default.size.stdout
  

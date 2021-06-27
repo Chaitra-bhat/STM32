@@ -1,0 +1,5 @@
+main.c:23:5:main	8	static
+main.c:35:6:uart_TX_init	8	static
+main.c:63:13:uart_set_baudrate	24	static
+main.c:68:17:compute_uart_bd	16	static
+main.c:74:6:uart_write	16	static

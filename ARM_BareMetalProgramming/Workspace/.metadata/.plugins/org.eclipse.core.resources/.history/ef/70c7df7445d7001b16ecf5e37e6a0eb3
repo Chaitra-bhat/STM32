@@ -1,0 +1,18 @@
+#include<uart.h>
+
+char data;
+
+int main()
+{
+	//For LED blinking
+	RCC->AHB1ENR |= GPIOD_ENA;
+
+	uart_RXTX_init();
+
+	while(1)
+	{
+		data = uart_read();
+	}
+	return 0;
+}
+

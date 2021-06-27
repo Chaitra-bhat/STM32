@@ -1,0 +1,5 @@
+uart.c:28:5:__io_putchar	16	static
+uart.c:34:6:uart_TX_init	8	static
+uart.c:62:13:uart_set_baudrate	24	static
+uart.c:67:17:compute_uart_bd	16	static
+uart.c:73:6:uart_write	16	static

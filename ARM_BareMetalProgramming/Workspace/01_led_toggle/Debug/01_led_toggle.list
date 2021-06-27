@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00000b49  00000000  00000000  000104a0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000000e2  00000000  00000000  00010fe9  2**0
+ 17 .debug_line   000000e4  00000000  00000000  00010fe9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00003109  00000000  00000000  000110cb  2**0
+ 18 .debug_str    00003109  00000000  00000000  000110cd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000141d4  2**0
+ 19 .comment      00000053  00000000  00000000  000141d6  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000058  00000000  00000000  00014228  2**2
+ 20 .debug_frame  00000058  00000000  00000000  0001422c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -107,17 +107,19 @@ int main()
  800020a:	4a0b      	ldr	r2, [pc, #44]	; (8000238 <main+0x50>)
  800020c:	f023 0301 	bic.w	r3, r3, #1
  8000210:	6013      	str	r3, [r2, #0]
+
+	while(1)
 	{
 		//set PD12 high
-		//GPIOD_ODR |= GREEN_LED_PIN;
-
-		//toggling the PD12 to low
-		GPIOD_ODR ^= GREEN_LED_PIN;
+		GPIOD_ODR |= GREEN_LED_PIN;
  8000212:	4b0a      	ldr	r3, [pc, #40]	; (800023c <main+0x54>)
  8000214:	681b      	ldr	r3, [r3, #0]
  8000216:	4a09      	ldr	r2, [pc, #36]	; (800023c <main+0x54>)
- 8000218:	f483 5380 	eor.w	r3, r3, #4096	; 0x1000
+ 8000218:	f443 5380 	orr.w	r3, r3, #4096	; 0x1000
  800021c:	6013      	str	r3, [r2, #0]
+
+		//toggling the PD12 to low
+		//GPIOD_ODR ^= GREEN_LED_PIN;
 
 		//a delay to notice the toggling
 		for(int count = 0; count<1000000;count++);
@@ -131,7 +133,7 @@ int main()
  800022c:	4a04      	ldr	r2, [pc, #16]	; (8000240 <main+0x58>)
  800022e:	4293      	cmp	r3, r2
  8000230:	ddf8      	ble.n	8000224 <main+0x3c>
-		GPIOD_ODR ^= GREEN_LED_PIN;
+		GPIOD_ODR |= GREEN_LED_PIN;
  8000232:	e7ee      	b.n	8000212 <main+0x2a>
  8000234:	40023830 	.word	0x40023830
  8000238:	40020c00 	.word	0x40020c00

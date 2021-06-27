@@ -54,10 +54,10 @@ int main()
 	while(1)
 	{
 		//set PD12 high
-		//GPIOD_ODR |= GREEN_LED_PIN;
+		GPIOD_ODR |= GREEN_LED_PIN;
 
 		//toggling the PD12 to low
-		GPIOD_ODR ^= GREEN_LED_PIN;
+		//GPIOD_ODR ^= GREEN_LED_PIN;
 
 		//a delay to notice the toggling
 		for(int count = 0; count<1000000;count++);
