@@ -1,0 +1,28 @@
+/*
+ * adc.c
+ *
+ *  Created on: Jun 27, 2021
+ *      Author: Navjeevan
+ */
+#include<stm32f407xx.h>
+#include<stdio.h>
+
+#define ADC1_ENA	(1U<<8)
+#define GPIOA_ENA	(1U<<0)
+
+void pa1_adc_init()
+{
+	//Enable clok
+	RCC->AHB1ENR |= GPIOA_ENA;
+	RCC->APB2ENR |= ADC1_ENA;
+
+	//Set mode to analog mode - PA1 (from datasheet)
+	GPIOA->MODER |= (1U<<2);
+	GPIOA->MODER |= (1U<<3);
+	//Configure ADC peripheral
+
+	//Configure clock for ADC module
+
+	//Configure ADC parameters
+
+}

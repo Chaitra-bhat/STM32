@@ -1,0 +1,24 @@
+#include<uart.h>
+#include<adc.h>
+
+
+int main()
+{
+	uart_TX_init();
+	pa1_adc_init()
+;
+	while(1)
+	{
+		data = uart2_read();
+		if(data == 'A'){
+			GPIOD->ODR |= GREEN_LED_PIN;
+			//printf("Received data\r");
+		}
+		else
+		{
+			GPIOD->ODR &= ~(GREEN_LED_PIN);
+		}
+	}
+	return 0;
+}
+
