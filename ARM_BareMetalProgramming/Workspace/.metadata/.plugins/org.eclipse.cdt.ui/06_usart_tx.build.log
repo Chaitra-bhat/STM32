@@ -1,10 +1,23 @@
-17:33:47 **** Incremental Build of configuration Debug for project 06_usart_tx ****
+20:20:58 **** Build of configuration Debug for project 06_usart_tx ****
 make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "06_usart_tx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\06_usart\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_usart_tx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 06_usart_tx.elf
+ 
 arm-none-eabi-size   06_usart_tx.elf 
+arm-none-eabi-objdump -h -S  06_usart_tx.elf  > "06_usart_tx.list"
+arm-none-eabi-objcopy  -O binary  06_usart_tx.elf  "06_usart_tx.bin"
    text	   data	    bss	    dec	    hex	filename
     960	      8	   1568	   2536	    9e8	06_usart_tx.elf
 Finished building: default.size.stdout
  
+Finished building: 06_usart_tx.bin
+ 
+Finished building: 06_usart_tx.list
+ 
 
-17:33:48 Build Finished. 0 errors, 0 warnings. (took 237ms)
+20:21:00 Build Finished. 0 errors, 0 warnings. (took 1s.852ms)
 

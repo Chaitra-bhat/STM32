@@ -1058,3 +1058,9 @@ Caused by: java.net.SocketException: Connection reset
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-06-27 20:03:55.207
 !MESSAGE Existing sessions are:
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-27 20:20:50.408
+!MESSAGE Indexed '06_usart_tx1' (3 sources, 61 headers) in 1.34 sec: 3,256 declarations; 5,307 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-27 20:20:56.091
+!MESSAGE Indexed '06_usart_tx' (3 sources, 61 headers) in 0.879 sec: 3,256 declarations; 5,307 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
