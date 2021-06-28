@@ -1,40 +1,14 @@
-22:34:38 **** Clean-only build of configuration Debug for project 11_adc_continuos_conversion ****
-make -j4 clean 
-rm -rf *
- 
-22:34:38 **** Build of configuration Debug for project 11_adc_continuos_conversion ****
+13:19:27 **** Incremental Build of configuration Debug for project 12_systick_timer ****
 make -j4 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
-arm-none-eabi-gcc "../Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/adc.d" -MT"Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/adc.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
-arm-none-eabi-gcc -o "11_adc_continuos_conversion.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_BareMetalProgramming\Workspace\11_adc_continuos_conversion\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_adc_continuos_conversion.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 11_adc_continuos_conversion.elf
- 
-arm-none-eabi-size   11_adc_continuos_conversion.elf 
-arm-none-eabi-objdump -h -S  11_adc_continuos_conversion.elf  > "11_adc_continuos_conversion.list"
-arm-none-eabi-objcopy  -O binary  11_adc_continuos_conversion.elf  "11_adc_continuos_conversion.bin"
+arm-none-eabi-size   12_systick_timer.elf 
    text	   data	    bss	    dec	    hex	filename
-   5640	    108	   1596	   7344	   1cb0	11_adc_continuos_conversion.elf
+   5580	    108	   1596	   7284	   1c74	12_systick_timer.elf
 Finished building: default.size.stdout
  
-Finished building: 11_adc_continuos_conversion.list
-Finished building: 11_adc_continuos_conversion.bin
- 
- 
-22:34:43 **** Incremental Build of configuration Debug for project 11_adc_continuos_conversion ****
+13:20:15 **** Incremental Build of configuration Debug for project 12_systick_timer ****
 make -j4 all 
-arm-none-eabi-size   11_adc_continuos_conversion.elf 
+arm-none-eabi-size   12_systick_timer.elf 
    text	   data	    bss	    dec	    hex	filename
-   5640	    108	   1596	   7344	   1cb0	11_adc_continuos_conversion.elf
-Finished building: default.size.stdout
- 
-22:34:49 **** Incremental Build of configuration Debug for project 11_adc_continuos_conversion ****
-make -j4 all 
-arm-none-eabi-size   11_adc_continuos_conversion.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5640	    108	   1596	   7344	   1cb0	11_adc_continuos_conversion.elf
+   5580	    108	   1596	   7284	   1c74	12_systick_timer.elf
 Finished building: default.size.stdout
  
