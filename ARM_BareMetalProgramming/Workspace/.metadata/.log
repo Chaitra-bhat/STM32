@@ -1160,3 +1160,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-06-28 12:41:29.368
 !MESSAGE Indexed '12_systick_timer' (5 sources, 63 headers) in 3.19 sec: 3,037 declarations; 4,172 references; 7 unresolved inclusions; 30 syntax errors; 727 unresolved names (9.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-28 21:25:22.682
+!MESSAGE Indexed '13_timer' (6 sources, 66 headers) in 1.84 sec: 3,425 declarations; 5,731 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-06-28 21:55:12.610
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-06-28 21:55:24.570
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-28 21:57:31.494
+!MESSAGE Indexed '14_timer_output_compare' (7 sources, 67 headers) in 1.74 sec: 3,427 declarations; 5,778 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
