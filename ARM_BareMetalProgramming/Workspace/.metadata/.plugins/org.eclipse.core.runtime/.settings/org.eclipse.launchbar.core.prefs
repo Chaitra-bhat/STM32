@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_usart Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:07_usart_printf Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:08_usart_modular,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:09_usart_rx Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_adc_continuos_conversion Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_adc_continuos_conversion,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:13_timer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_timer_output_compare
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_usart_interrupt
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_led_toggle\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_led_toggle\ Debug/activeLaunchTarget=null\:---
@@ -16,3 +16,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:08_usart_modular/activeLaunchMo
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:09_usart_rx\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_adc_continuos_conversion/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:17_usart_interrupt/activeLaunchMode=debug

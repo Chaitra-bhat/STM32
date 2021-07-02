@@ -1,2 +1,4 @@
 1624805448276	Rename resource '06_usart_tx'
 1624805454493	Rename resource '06_usart_tx1'
+1625060523633	Rename resource '16_input_Interuppt'
+1625060569372	Delete resource '16_input_Interrupt/Inc/exti'

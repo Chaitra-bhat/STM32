@@ -1,0 +1,15 @@
+/*
+ * exti.h
+ *
+ *  Created on: Jun 30, 2021
+ *      Author: Navjeevan
+ */
+
+#ifndef EXTI_H_
+#define EXTI_H_
+#define LINE13	(1U<<13)
+
+void void pc13_exti_init();
+
+
+#endif /* EXTI_H_ */

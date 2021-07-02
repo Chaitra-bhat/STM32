@@ -1,0 +1,8 @@
+core_cm4.h:1688:22:__NVIC_EnableIRQ	16	static
+uart.c:32:5:__io_putchar	16	static
+uart.c:38:6:uart_RXInterrupt_init	8	static
+uart.c:81:6:uart_TX_init	8	static
+uart.c:109:13:uart_set_baudrate	24	static
+uart.c:114:17:compute_uart_bd	16	static
+uart.c:120:6:uart_write	16	static
+uart.c:128:6:uart2_read	4	static

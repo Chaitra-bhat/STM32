@@ -1,0 +1,2 @@
+timer.c:16:6:timer_1Hz_init	4	static
+timer.c:35:6:timer2_output_compare	4	static
