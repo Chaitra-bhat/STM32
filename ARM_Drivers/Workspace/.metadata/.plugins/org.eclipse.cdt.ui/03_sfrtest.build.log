@@ -1,0 +1,10 @@
+23:07:28 **** Incremental Build of configuration Debug for project 03_sfrtest ****
+make -j4 all 
+arm-none-eabi-size   03_sfrtest.elf 
+   text	   data	    bss	    dec	    hex	filename
+    676	      8	   1568	   2252	    8cc	03_sfrtest.elf
+Finished building: default.size.stdout
+ 
+
+23:07:29 Build Finished. 0 errors, 0 warnings. (took 325ms)
+

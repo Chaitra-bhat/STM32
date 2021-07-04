@@ -1,0 +1,27 @@
+/*
+ * gpio.h
+ *
+ *  Created on: Jul 4, 2021
+ *      Author: Navjeevan
+ */
+
+#ifndef GPIO_H_
+#define GPIO_H_
+
+#include<stdint.h>
+
+typedef struct{
+	uint32_t MODER;
+	uint32_t OTYPER;
+	uint32_t OSPEEDR;
+	uint32_t PUPDR;
+	uint32_t IDR;
+	uint32_t ODR;
+	uint32_t BSRR;
+	uint32_t LCKR;
+	uint32_t AFR[2];
+
+}GPIO_RegDef_t;
+
+
+#endif /* GPIO_H_ */

@@ -20,11 +20,11 @@
 #include <stdint.h>
 #include <stdio.h>
 
-extern void initialise_monitor_handles(void);
+//extern void initialise_monitor_handles(void);
 
 int main(void)
 {
-	initialise_monitor_handles();
+	//initialise_monitor_handles();
 
     /* Loop forever */
 	printf("Hello World from Semi-hosting feature\n\r");

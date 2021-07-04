@@ -1,0 +1,30 @@
+/*
+ * gpio.h
+ *
+ *  Created on: Jul 4, 2021
+ *      Author: Navjeevan
+ */
+
+#ifndef GPIO_H_
+#define GPIO_H_
+
+#include<stdint.h>
+#include <stdio.h>
+
+#define __vo			volatile
+/* REGISTER DEFINITIONS FOR GPIO*/
+typedef struct{
+	__vo uint32_t MODER;
+	__vo uint32_t OTYPER;
+	__vo uint32_t OSPEEDR;
+	__vo uint32_t PUPDR;
+	__vo uint32_t IDR;
+	__vo uint32_t ODR;
+	__vo uint32_t BSRR;
+	__vo uint32_t LCKR;
+	__vo uint32_t AFR[2];
+
+}GPIO_RegDef_t;
+
+
+#endif /* GPIO_H_ */

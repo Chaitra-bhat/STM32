@@ -1,0 +1,20 @@
+21:56:22 **** Incremental Build of configuration Debug for project 03_test ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Include" -I"D:/BOOKS_ALL/UdemyCourses/STM32Cube_FW_F4_V1.26.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "03_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\03_test\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="03_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 03_test.elf
+ 
+arm-none-eabi-objdump -h -S  03_test.elf  > "03_test.list"
+arm-none-eabi-objcopy  -O binary  03_test.elf  "03_test.bin"
+arm-none-eabi-size   03_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5220	    108	   1596	   6924	   1b0c	03_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: 03_test.bin
+Finished building: 03_test.list
+ 
+ 
+
+21:56:24 Build Finished. 0 errors, 0 warnings. (took 1s.131ms)
+
