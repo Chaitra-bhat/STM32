@@ -1,7 +1,5 @@
 "Src/gpio.o"
-"Src/i2c.o"
 "Src/main.o"
-"Src/spi.o"
 "Src/syscalls.o"
 "Src/sysmem.o"
 "Startup/startup_stm32f407vgtx.o"
