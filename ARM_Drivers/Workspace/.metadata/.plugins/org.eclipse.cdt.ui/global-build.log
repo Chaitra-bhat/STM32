@@ -1,22 +1,109 @@
-19:28:57 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
+11:39:24 **** Incremental Build of configuration Debug for project 05_led_blinky ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
-arm-none-eabi-gcc "../Src/i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/i2c.d" -MT"Src/i2c.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/i2c.o"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/spi.d" -MT"Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/spi.o"
-arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 04_gpio_drivers.elf
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
  
-arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
-arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
-arm-none-eabi-size   04_gpio_drivers.elf 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
    text	   data	    bss	    dec	    hex	filename
-    676	      8	   1568	   2252	    8cc	04_gpio_drivers.elf
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
 Finished building: default.size.stdout
  
-Finished building: 04_gpio_drivers.bin
-Finished building: 04_gpio_drivers.list
+Finished building: 05_led_blinky.bin
+Finished building: 05_led_blinky.list
  
+ 
+11:39:28 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+11:40:10 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.bin
+Finished building: 05_led_blinky.list
+ 
+ 
+11:40:40 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.bin
+Finished building: 05_led_blinky.list
+ 
+ 
+11:41:07 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.bin
+Finished building: 05_led_blinky.list
+ 
+ 
+11:45:09 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.list
+Finished building: 05_led_blinky.bin
+ 
+ 
+11:46:38 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.bin
+ 
+Finished building: 05_led_blinky.list
  

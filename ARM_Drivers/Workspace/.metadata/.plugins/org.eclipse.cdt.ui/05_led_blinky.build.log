@@ -1,0 +1,20 @@
+11:46:38 **** Incremental Build of configuration Debug for project 05_led_blinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledToggle.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledToggle.d" -MT"Src/ledToggle.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledToggle.o"
+arm-none-eabi-gcc -o "05_led_blinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_led_blinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_led_blinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_led_blinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_led_blinky.elf  > "05_led_blinky.list"
+arm-none-eabi-objcopy  -O binary  05_led_blinky.elf  "05_led_blinky.bin"
+arm-none-eabi-size   05_led_blinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1708	      8	   1568	   3284	    cd4	05_led_blinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_led_blinky.bin
+ 
+Finished building: 05_led_blinky.list
+ 
+
+11:46:40 Build Finished. 0 errors, 0 warnings. (took 1s.560ms)
+
