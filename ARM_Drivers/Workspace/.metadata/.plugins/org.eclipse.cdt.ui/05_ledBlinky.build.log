@@ -1,0 +1,20 @@
+14:08:44 **** Incremental Build of configuration Debug for project 05_ledBlinky ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ledBlinky.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ledBlinky.d" -MT"Src/ledBlinky.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ledBlinky.o"
+arm-none-eabi-gcc -o "05_ledBlinky.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_ledBlinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_ledBlinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_ledBlinky.elf
+ 
+arm-none-eabi-objdump -h -S  05_ledBlinky.elf  > "05_ledBlinky.list"
+arm-none-eabi-objcopy  -O binary  05_ledBlinky.elf  "05_ledBlinky.bin"
+arm-none-eabi-size   05_ledBlinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1660	      8	   1568	   3236	    ca4	05_ledBlinky.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_ledBlinky.bin
+Finished building: 05_ledBlinky.list
+ 
+ 
+
+14:08:45 Build Finished. 0 errors, 0 warnings. (took 807ms)
+

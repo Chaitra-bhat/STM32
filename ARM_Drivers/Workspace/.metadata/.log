@@ -408,3 +408,9 @@ java.lang.Exception: File: C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfo
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1232)
 	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-07-10 13:53:05.587
+!MESSAGE Indexed '05_ledBlinky' (4 sources, 2 headers) in 0.063 sec: 191 declarations; 504 references; 13 unresolved inclusions; 0 syntax errors; 112 unresolved names (14%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-07-10 14:09:53.606
+!MESSAGE Indexed '06_ButtonBlinky' (4 sources, 2 headers) in 0.07 sec: 193 declarations; 544 references; 13 unresolved inclusions; 0 syntax errors; 112 unresolved names (13%)
