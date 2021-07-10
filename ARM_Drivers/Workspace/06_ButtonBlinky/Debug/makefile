@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := 05_ledBlinky
+BUILD_ARTIFACT_NAME := 06_ButtonBlinky
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX := 
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME).$(BUILD_ARTIFACT_EXTENSION)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-05_ledBlinky.elf \
+06_ButtonBlinky.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-05_ledBlinky.list \
+06_ButtonBlinky.list \
 
 OBJCOPY_BIN += \
-05_ledBlinky.bin \
+06_ButtonBlinky.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: 05_ledBlinky.elf secondary-outputs
+main-build: 06_ButtonBlinky.elf secondary-outputs
 
 # Tool invocations
-05_ledBlinky.elf: $(OBJS) $(USER_OBJS) C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_ledBlinky\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "05_ledBlinky.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\05_ledBlinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_ledBlinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+06_ButtonBlinky.elf: $(OBJS) $(USER_OBJS) C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\06_ButtonBlinky\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "06_ButtonBlinky.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\06_ButtonBlinky\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="06_ButtonBlinky.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,13 +70,13 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-05_ledBlinky.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "05_ledBlinky.list"
+06_ButtonBlinky.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "06_ButtonBlinky.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-05_ledBlinky.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "05_ledBlinky.bin"
+06_ButtonBlinky.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "06_ButtonBlinky.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

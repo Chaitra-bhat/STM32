@@ -23,7 +23,7 @@
 
 int main(void)
 {
-  GPIO_Handle_t GPIOLed, GPIOButton;
+  GPIO_Handle_t GPIOLed;
 
   GPIOLed.pGPIOx = GPIOD;
   GPIOLed.GPIO_PinConfig.GPIO_PinNumber = GPIO_PINUMBER_12;
@@ -32,29 +32,13 @@ int main(void)
   GPIOLed.GPIO_PinConfig.GPIO_PinOPType = GPIO_OPTYPE_PUSHPULL;
   GPIOLed.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PUPD_NO;
 
-  GPIOButton.pGPIOx = GPIOA;
-  GPIOButton.GPIO_PinConfig.GPIO_PinNumber = GPIO_PINUMBER_0;
-  GPIOButton.GPIO_PinConfig.GPIO_PinMode = GPIO_MODE_INPUT;
-  GPIOButton.GPIO_PinConfig.GPIO_PinOPType = GPIO_OPTYPE_PUSHPULL;
-  GPIOButton.GPIO_PinConfig.GPIO_PinPuPdControl = GPIO_PUPD_NO;
-  GPIOButton.GPIO_PinConfig.GPIO_PinSpeed = GPIO_OSPEED_MEDIUM;
-
   GPIO_PeriClockControl(GPIOD, ENABLE);
-  GPIO_PeriClockControl(GPIOA, ENABLE);
-  GPIO_Init(&GPIOButton);
   GPIO_Init(&GPIOLed);
 
   while(1)
   {
-	  if(GPIO_ReadFromInputPin(GPIOA, GPIO_PINUMBER_0) == BUTTON_PRESSED)
-	  {
-		  GPIO_WriteToOutputPin(GPIOD, GPIO_PINUMBER_12, SET);
-	  }
-	  else
-	  {
-		  GPIO_WriteToOutputPin(GPIOD, GPIO_PINUMBER_12, RESET);
-	  }
-
+	  GPIO_ToggleOutputPin(GPIOD, GPIO_PINUMBER_12);
+	  for(int i=0; i<5000;i++);
   }
 
 }
