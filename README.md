@@ -1,2 +1,2 @@
 # tenderfoot
-This repository contains Projects from Basic Low level drivers to HAL driver projects. 
+This repository contains Projects Basic Low level drivers and application projects using STM32
