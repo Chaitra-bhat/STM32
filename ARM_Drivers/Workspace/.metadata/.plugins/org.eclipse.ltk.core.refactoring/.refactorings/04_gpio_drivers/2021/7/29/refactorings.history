@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;04_gpio_drivers/Src/02_ledBlinkyInterrupt&apos; to &apos;02_ledBlinkyInterrupt.c&apos;" description="Rename resource &apos;02_ledBlinkyInterrupt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/02_ledBlinkyInterrupt" name="02_ledBlinkyInterrupt.c" stamp="1625979466023" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;04_gpio_drivers/Src/main.c&apos; to &apos;01_ledBlinky.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/main.c" name="01_ledBlinky.c" stamp="1625979476005" updateReferences="true"/>
+</session>

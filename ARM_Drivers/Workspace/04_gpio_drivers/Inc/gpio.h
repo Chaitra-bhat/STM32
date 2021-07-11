@@ -77,11 +77,11 @@ typedef struct
 #define GPIO_OSPEED_LOW			0
 #define GPIO_OSPEED_MEDIUM		1
 #define GPIO_OSPEED_FAST		2
-#define GPOI_OSPEED_HIGH		3
+#define GPIO_OSPEED_HIGH		3
 
 #define GPIO_PUPD_NO   		0
-#define GPIO_PIN_PU			1
-#define GPIO_PIN_PD			2
+#define GPIO_PUPD_PU			1
+#define GPIO_PUPD_PD			2
 
 
 /*PERIPHERAL CLOCK ENABLE FOR GPIO DEFINITIONS*/

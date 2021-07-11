@@ -16,6 +16,63 @@
 #define SET							ENABLE
 #define RESET						DISABLE
 
+#define GPIO_BASEADDR_TO_CODE(x)	((x == GPIOA)? 0 :\
+									(x == GPIOB)? 1 :\
+									(x == GPIOC)? 2 :\
+									(x == GPIOD)? 3 :\
+									(x == GPIOE)? 4 :\
+									(x == GPIOF)? 5 :\
+									(x == GPIOG)? 6 :\
+									(x == GPIOH)? 7 :\
+									(x == GPIOI)? 8 :\
+									(x == GPIOJ)? 9 :0)
+/*IRQ macros*/
+#define	IRQ_NO_EXTI0			6
+#define IRQ_NO_EXTI1			7
+#define IRQ_NO_EXTI2			8
+#define IRQ_NO_EXTI3			9
+#define IRQ_NO_EXTI4			10
+#define IRQ_NO_EXTI9_5			23
+#define IRQ_NO_EXTI15_10		40
+
+/*arm cortex M processor NVIC ISERx register*/
+#define NVIC_ISER0				((__vo uint32_t*)0xE000E100)
+#define NVIC_ISER1				((__vo uint32_t*)0xE000E104)
+#define NVIC_ISER2				((__vo uint32_t*)0xE000E108)
+#define NVIC_ISER3				((__vo uint32_t*)0xE000E10C)
+
+/*arm cortex M processor NVIC ICERx register*/
+#define NVIC_ICER0				((__vo uint32_t*)0xE000E180)
+#define NVIC_ICER1				((__vo uint32_t*)0xE000E184)
+#define NVIC_ICER2				((__vo uint32_t*)0xE000E188)
+#define NVIC_ICER3				((__vo uint32_t*)0xE000E18C)
+
+/* Priority regsiter adress for arm cortex M processor*/
+#define NVIC_PR_BASE_ADDR		((__vo uint32_t*)0xE000E400)
+
+#define	NO_PRIORITY_BITS_IMPLEMENTED		4
+
+/* IRQ Priority Macros*/
+#define NVIC_PRIO_0					0
+#define NVIC_PRIO_1					1
+#define NVIC_PRIO_2					2
+#define NVIC_PRIO_3					3
+#define NVIC_PRIO_4					4
+#define NVIC_PRIO_5					5
+#define NVIC_PRIO_6					6
+#define NVIC_PRIO_7					7
+#define NVIC_PRIO_8					8
+#define NVIC_PRIO_9					9
+#define NVIC_PRIO_10				10
+#define NVIC_PRIO_11				11
+#define NVIC_PRIO_12				12
+#define NVIC_PRIO_13				13
+#define NVIC_PRIO_14				14
+#define NVIC_PRIO_15				15
+#define NVIC_PRIO_16				16
+
+
+
 /*MEMORY RELATED DEFINITIONS*/
 #define FLASH_BASEADDR				0x80000000U			//BASE ADDRESS OF FLASH MEMORY
 #define SRAM1_BASEADDR				0x20000000U			//BASE ADDRESS OF SRAM1
@@ -115,6 +172,7 @@
 #define DMA1_BASEADDR				0x40026000U
 #define DMA2_BASEADDR				0x40026400U
 
+
 /*PERIPHERAL REGISTER DEFINITION STRUCTURE FOR RCC*/
 typedef struct {
 	__vo uint32_t CR;
@@ -153,7 +211,36 @@ typedef struct {
 	__vo uint32_t PLLI2SCFGR;
 }RCC_RegDef_t;
 
+
+typedef struct
+{
+	__vo uint32_t IMR;
+	__vo uint32_t EMR;
+	__vo uint32_t RTSR;
+	__vo uint32_t FTSR;
+	__vo uint32_t SWIER;
+	__vo uint32_t PR;
+
+}EXTI_RegDef_t;
+
+typedef struct
+{
+	__vo uint32_t MEMRMP;
+	__vo uint32_t PMC;
+	__vo uint32_t EXTICR[4];
+	uint32_t      RESERVED1[2];
+	__vo uint32_t CMPCR;
+	uint32_t      RESERVED2[2];
+	__vo uint32_t CFGR;
+} SYSCFG_RegDef_t;
+
 /*PERIPHERAL DEFINITION*/
 #define RCC								((RCC_RegDef_t*)RCC_BASEADDR)
+#define EXTI 							((EXTI_RegDef_t*)EXTI_BASEADDR)
+#define SYSCFG							((SYSCFG_RegDef_t*)SYSCFG_BASEADDR)
+
+/*Clock Enable for Syscfg */
+#define SYSCFG_CLK_EN()					((RCC->APB2ENR) |= (1<<14))
+
 
 #endif /* STM32F407XX_H_ */

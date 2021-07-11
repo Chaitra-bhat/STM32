@@ -1,14 +1,92 @@
-14:21:04 **** Incremental Build of configuration Debug for project 06_ButtonBlinky ****
+20:53:15 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
 make -j4 all 
-arm-none-eabi-size   06_ButtonBlinky.elf 
+arm-none-eabi-gcc "../Src/02_ledBlinkyInterrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/02_ledBlinkyInterrupt.d" -MT"Src/02_ledBlinkyInterrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/02_ledBlinkyInterrupt.o"
+arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_gpio_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
+arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
+arm-none-eabi-size   04_gpio_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-   1788	      8	   1568	   3364	    d24	06_ButtonBlinky.elf
+   2704	      8	   1568	   4280	   10b8	04_gpio_drivers.elf
 Finished building: default.size.stdout
  
-14:21:12 **** Incremental Build of configuration Debug for project 06_ButtonBlinky ****
+Finished building: 04_gpio_drivers.bin
+Finished building: 04_gpio_drivers.list
+ 
+ 
+20:53:19 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
 make -j4 all 
-arm-none-eabi-size   06_ButtonBlinky.elf 
+arm-none-eabi-size   04_gpio_drivers.elf 
    text	   data	    bss	    dec	    hex	filename
-   1788	      8	   1568	   3364	    d24	06_ButtonBlinky.elf
+   2704	      8	   1568	   4280	   10b8	04_gpio_drivers.elf
 Finished building: default.size.stdout
+ 
+20:59:50 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/02_ledBlinkyInterrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/02_ledBlinkyInterrupt.d" -MT"Src/02_ledBlinkyInterrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/02_ledBlinkyInterrupt.o"
+arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_gpio_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
+arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
+arm-none-eabi-size   04_gpio_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2756	      8	   1568	   4332	   10ec	04_gpio_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 04_gpio_drivers.bin
+Finished building: 04_gpio_drivers.list
+ 
+ 
+21:00:43 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/02_ledBlinkyInterrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/02_ledBlinkyInterrupt.d" -MT"Src/02_ledBlinkyInterrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/02_ledBlinkyInterrupt.o"
+arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_gpio_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
+arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
+arm-none-eabi-size   04_gpio_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2756	      8	   1568	   4332	   10ec	04_gpio_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 04_gpio_drivers.bin
+Finished building: 04_gpio_drivers.list
+ 
+ 
+21:01:18 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/02_ledBlinkyInterrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/02_ledBlinkyInterrupt.d" -MT"Src/02_ledBlinkyInterrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/02_ledBlinkyInterrupt.o"
+arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_gpio_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
+arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
+arm-none-eabi-size   04_gpio_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2756	      8	   1568	   4332	   10ec	04_gpio_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 04_gpio_drivers.bin
+Finished building: 04_gpio_drivers.list
+ 
+ 
+21:02:00 **** Incremental Build of configuration Debug for project 04_gpio_drivers ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/02_ledBlinkyInterrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/02_ledBlinkyInterrupt.d" -MT"Src/02_ledBlinkyInterrupt.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/02_ledBlinkyInterrupt.o"
+arm-none-eabi-gcc -o "04_gpio_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\tenderfoot\ARM_Drivers\Workspace\04_gpio_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_gpio_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 04_gpio_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  04_gpio_drivers.elf  > "04_gpio_drivers.list"
+arm-none-eabi-objcopy  -O binary  04_gpio_drivers.elf  "04_gpio_drivers.bin"
+arm-none-eabi-size   04_gpio_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2756	      8	   1568	   4332	   10ec	04_gpio_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: 04_gpio_drivers.bin
+Finished building: 04_gpio_drivers.list
+ 
  
