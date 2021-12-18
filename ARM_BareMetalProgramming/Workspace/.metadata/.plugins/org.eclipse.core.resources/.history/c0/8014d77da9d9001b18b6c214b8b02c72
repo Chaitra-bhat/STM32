@@ -1,9 +1,0 @@
-/*
- * exti.c
- *
- *  Created on: Jun 30, 2021
- *      Author: Navjeevan
- */
-
-#include<stm32f4xx.h>
-#include<exti.h>
