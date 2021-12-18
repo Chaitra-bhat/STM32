@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;01_onboard_led_toggle/Inc/stm32f446re_gpio.h&apos; to &apos;stm32f446re.h&apos;" description="Rename resource &apos;stm32f446re_gpio.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/stm32f446re_gpio.h" name="stm32f446re.h" stamp="1639811251691" updateReferences="true"/>
+</session>

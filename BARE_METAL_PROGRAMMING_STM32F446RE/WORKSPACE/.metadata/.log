@@ -16,3 +16,12 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Navjeev
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-12-18 11:52:56.824
 !MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-18 12:09:54.483
+!MESSAGE Indexed '01_onboard_led_toggle' (3 sources, 53 headers) in 2.37 sec: 1,964 declarations; 2,810 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-18 12:25:55.037
+!MESSAGE Indexed '01_onboard_led_toggle' (3 sources, 54 headers) in 0.386 sec: 1,964 declarations; 2,810 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-18 14:57:16.373
+!MESSAGE Indexed '02_external_led_toggle' (3 sources, 54 headers) in 0.65 sec: 1,965 declarations; 2,818 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)

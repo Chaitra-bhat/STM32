@@ -1,0 +1,29 @@
+/*
+ * stm32f446re_gpio.h
+ *
+ *  Created on: Dec 18, 2021
+ *      Author: Chaitra
+ */
+
+#ifndef STM32F446RE_H_
+#define STM32F446RE_H_
+
+#define PERIPHERAL_BASEADDR				0x40000000U
+#define APB1_BASEADDR					0x40000000U
+#define APB2_BASEADDR					0x40010000U
+#define AHB1_BASEADDR					0x40020000U
+#define AHB2_BASEADDR					0x50000000U
+#define AHB3_BASEADDR					0xA0001000U
+
+
+//GPIO BASE ADDRESS
+#define GPIOA_BASEADDR					0x40020000U
+
+#define RCC_BASEADDR					0x40023800U
+#define RCC_AHB1ENR						(RCC_BASEADDR + 0x30)
+
+// ENABLING BITS FOR EACH GPIO
+#define GPIOA_ENABLE					(1U<<0)
+
+
+#endif /* STM32F446RE_H_ */
