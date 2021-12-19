@@ -1,0 +1,15 @@
+#include<stm32f4xx.h>
+
+#define GPIOENA		(1U<<0)
+#define LED_PIN5		(1U<<5)
+
+
+int main()
+{
+	RCC->AHB1ENR |= GPIOENA;
+
+	GPIOA->MODER |= (1U<<10);
+	GPIOA->MODER &= ~(1U<<11);
+
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include<stm32f4xx.h>
+
+#define GPIOENA		(1U<<0)
+#define LED_PIN5		(1U<<5)
+
+
+int main()
+{
+
+
+	return 0;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;0_gpio_input&apos; to &apos;05_gpio_input&apos;" description="Rename resource &apos;0_gpio_input&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/0_gpio_input" name="05_gpio_input" stamp="1639900111951" updateReferences="true"/>
+</session>

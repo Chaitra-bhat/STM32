@@ -1,0 +1,10 @@
+13:16:28 **** Incremental Build of configuration Debug for project 04_gpio_output_bsrr ****
+make -j4 all 
+arm-none-eabi-size   04_gpio_output_bsrr.elf 
+   text	   data	    bss	    dec	    hex	filename
+    816	      8	   1568	   2392	    958	04_gpio_output_bsrr.elf
+Finished building: default.size.stdout
+ 
+
+13:16:28 Build Finished. 0 errors, 0 warnings. (took 290ms)
+
