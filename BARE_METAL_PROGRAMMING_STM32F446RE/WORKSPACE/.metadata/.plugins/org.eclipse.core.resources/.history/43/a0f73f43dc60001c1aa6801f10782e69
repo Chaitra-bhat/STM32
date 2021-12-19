@@ -1,0 +1,10 @@
+
+#include<adc.h>
+#include<stdint.h>
+
+
+int main(void)
+{
+	adc_init();
+
+}

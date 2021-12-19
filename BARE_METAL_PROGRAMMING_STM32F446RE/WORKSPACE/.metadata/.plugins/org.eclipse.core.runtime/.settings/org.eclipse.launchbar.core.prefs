@@ -13,3 +13,4 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:05_gpio_input/activeLaunchMode=
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_usart_tx/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:07_usart_printf/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:09_usart_rx/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_adc_conversion/activeLaunchMode=debug
