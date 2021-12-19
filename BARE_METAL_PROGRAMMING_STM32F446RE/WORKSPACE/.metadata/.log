@@ -134,3 +134,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-12-19 13:18:32.227
 !MESSAGE Indexed '05_gpio_input' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 17:16:04.243
+!MESSAGE Indexed '06_usart_tx' (3 sources, 53 headers) in 1.16 sec: 1,964 declarations; 2,810 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 18:13:41.893
+!MESSAGE Indexed '06_usart_printf' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 18:13:43.987
+!MESSAGE Indexed '06_usart_printf' (3 sources, 53 headers) in 0.714 sec: 1,964 declarations; 2,810 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 18:15:07.940
+!MESSAGE Indexed '07_usart_printf' (2 sources, 53 headers) in 0.58 sec: 1,962 declarations; 2,808 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 18:21:44.423
+!MESSAGE Indexed '08_usart_modular' (3 sources, 53 headers) in 0.597 sec: 1,964 declarations; 2,810 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-19 18:37:49.744
+!MESSAGE Indexed '09_usart_rx' (4 sources, 65 headers) in 1.61 sec: 3,422 declarations; 5,464 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)

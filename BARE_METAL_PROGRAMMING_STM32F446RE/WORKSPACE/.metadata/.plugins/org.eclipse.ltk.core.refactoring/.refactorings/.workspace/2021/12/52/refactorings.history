@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;0_gpio_input&apos; to &apos;05_gpio_input&apos;" description="Rename resource &apos;0_gpio_input&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/0_gpio_input" name="05_gpio_input" stamp="1639900111951" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;0_gpio_input&apos; to &apos;05_gpio_input&apos;" description="Rename resource &apos;0_gpio_input&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/0_gpio_input" name="05_gpio_input" stamp="1639900111951" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;06_usart_printf&apos;" deleteContents="false" description="Delete resource &apos;06_usart_printf&apos;" element1="/06_usart_printf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1639917860124"/>
 </session>

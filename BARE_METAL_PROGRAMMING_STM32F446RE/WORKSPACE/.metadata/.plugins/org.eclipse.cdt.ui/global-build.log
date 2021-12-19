@@ -1,24 +1,32 @@
-13:58:14 **** Incremental Build of configuration Debug for project 05_gpio_input ****
+18:59:08 **** Incremental Build of configuration Debug for project 09_usart_rx ****
 make -j4 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "05_gpio_input.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\STM32\BARE_METAL_PROGRAMMING_STM32F446RE\WORKSPACE\0_gpio_input\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_gpio_input.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 05_gpio_input.elf
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Include" -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Include" -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Device/ST/STM32F4xx/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+In file included from ../Src/main.c:4:
+../Inc/uart.h:26:13: warning: 'setBaudrate' declared 'static' but never defined [-Wunused-function]
+   26 | static void setBaudrate(USART_TypeDef *USARTx, uint32_t PeriphClock, uint32_t Baudrate);
+      |             ^~~~~~~~~~~
+../Inc/uart.h:27:17: warning: 'compute_uart_baudrate' declared 'static' but never defined [-Wunused-function]
+   27 | static uint16_t compute_uart_baudrate(uint32_t PeriphClock, uint32_t Baudrate);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "09_usart_rx.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\STM32\BARE_METAL_PROGRAMMING_STM32F446RE\WORKSPACE\09_usart_rx\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_usart_rx.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_usart_rx.elf
  
-arm-none-eabi-objdump -h -S  05_gpio_input.elf  > "05_gpio_input.list"
-arm-none-eabi-objcopy  -O binary  05_gpio_input.elf  "05_gpio_input.bin"
-arm-none-eabi-size   05_gpio_input.elf 
+arm-none-eabi-objdump -h -S  09_usart_rx.elf  > "09_usart_rx.list"
+arm-none-eabi-objcopy  -O binary  09_usart_rx.elf  "09_usart_rx.bin"
+arm-none-eabi-size   09_usart_rx.elf 
    text	   data	    bss	    dec	    hex	filename
-    832	      8	   1568	   2408	    968	05_gpio_input.elf
+   1024	      8	   1568	   2600	    a28	09_usart_rx.elf
 Finished building: default.size.stdout
+Finished building: 09_usart_rx.list
  
-Finished building: 05_gpio_input.list
-Finished building: 05_gpio_input.bin
+Finished building: 09_usart_rx.bin
  
  
-13:58:20 **** Incremental Build of configuration Debug for project 05_gpio_input ****
+18:59:39 **** Incremental Build of configuration Debug for project 09_usart_rx ****
 make -j4 all 
-arm-none-eabi-size   05_gpio_input.elf 
+arm-none-eabi-size   09_usart_rx.elf 
    text	   data	    bss	    dec	    hex	filename
-    832	      8	   1568	   2408	    968	05_gpio_input.elf
+   1024	      8	   1568	   2600	    a28	09_usart_rx.elf
 Finished building: default.size.stdout
  

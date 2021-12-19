@@ -1,0 +1,10 @@
+#include <stm32f4xx.h>
+
+
+#define GPIOA_ENA		(1U<<0)
+int main()
+{
+
+
+	return 0;
+}

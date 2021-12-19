@@ -841,3 +841,54 @@
 2021-12-19 13:18:18,935 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]
 2021-12-19 13:18:18,940 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.boards.txt: 1 item(s)
 2021-12-19 13:18:18,940 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-F446RE]
+2021-12-19 17:02:10,193 [INFO] MainUpdater:2661 - connection check result : 10
+2021-12-19 17:02:10,353 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Navjeevan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-12-19 17:02:10,353 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 17:02:10,353 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-12-19 17:02:10,896 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 17:15:41,023 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 17:15:41,133 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 17:16:03,128 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2021-12-19 17:16:03,128 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]
+2021-12-19 17:16:03,133 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-12-19 17:16:03,133 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-F446RE]
+2021-12-19 18:13:10,854 [INFO] MainUpdater:2661 - connection check result : 10
+2021-12-19 18:13:10,992 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Navjeevan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-12-19 18:13:11,002 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:13:11,002 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-12-19 18:13:11,362 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:13:14,117 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:13:14,157 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:13:43,303 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2021-12-19 18:13:43,303 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]
+2021-12-19 18:13:43,313 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-12-19 18:13:43,313 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-F446RE]
+2021-12-19 18:14:46,953 [INFO] MainUpdater:2661 - connection check result : 10
+2021-12-19 18:14:47,053 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Navjeevan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-12-19 18:14:47,053 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:14:47,053 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-12-19 18:14:47,293 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:14:49,323 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:14:49,353 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:15:07,410 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2021-12-19 18:15:07,410 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]
+2021-12-19 18:15:07,410 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-12-19 18:15:07,410 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-F446RE]
+2021-12-19 18:21:22,903 [INFO] MainUpdater:2661 - connection check result : 10
+2021-12-19 18:21:23,043 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Navjeevan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-12-19 18:21:23,048 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:21:23,048 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-12-19 18:21:23,523 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:21:25,593 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:21:25,633 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:21:43,861 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2021-12-19 18:21:43,861 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]
+2021-12-19 18:21:43,866 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2021-12-19 18:21:43,866 [INFO] ApiDb:280 - User favorites Boards=[NUCLEO-F446RE]
+2021-12-19 18:33:24,459 [INFO] MainUpdater:2661 - connection check result : 10
+2021-12-19 18:33:24,594 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Navjeevan\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2021-12-19 18:33:24,596 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
+2021-12-19 18:33:24,597 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2021-12-19 18:33:25,005 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-12-19 18:33:30,522 [INFO] ApiDb:276 - Save user favorites file C:\Users\Navjeevan/.stm32cubeide/favorites.mcus.txt: 1 item(s)
+2021-12-19 18:33:30,522 [INFO] ApiDb:280 - User favorites MCUs=[STM32F446RETx]

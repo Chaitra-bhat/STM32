@@ -10,3 +10,6 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_onboard_led_toggle/activeLau
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_gpio_output/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:04_gpio_output_bsrr/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:05_gpio_input/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:06_usart_tx/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:07_usart_printf/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:09_usart_rx/activeLaunchMode=debug
