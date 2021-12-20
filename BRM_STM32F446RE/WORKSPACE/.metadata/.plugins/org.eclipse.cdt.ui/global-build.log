@@ -1,0 +1,29 @@
+11:56:25 **** Incremental Build of configuration Debug for project 13_i2c_BMp180 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/bmp180.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/bmp180.d" -MT"Src/bmp180.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/bmp180.o"
+../Src/bmp180.c: In function 'adxl_read_address':
+../Src/bmp180.c:17:3: warning: implicit declaration of function 'I2C1_byteRead'; did you mean 'I2C_byteRead'? [-Wimplicit-function-declaration]
+   17 |   I2C1_byteRead( DEVICE_ADDR, reg, &data);
+      |   ^~~~~~~~~~~~~
+      |   I2C_byteRead
+arm-none-eabi-gcc -o "13_i2c_BMp180.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\STM32\BARE_METAL_PROGRAMMING_STM32F446RE\WORKSPACE\13_i2c_BMp180\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_i2c_BMp180.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_i2c_BMp180.elf
+ 
+arm-none-eabi-size   13_i2c_BMp180.elf 
+arm-none-eabi-objdump -h -S  13_i2c_BMp180.elf  > "13_i2c_BMp180.list"
+arm-none-eabi-objcopy  -O binary  13_i2c_BMp180.elf  "13_i2c_BMp180.bin"
+Finished building: 13_i2c_BMp180.bin
+ 
+   text	   data	    bss	    dec	    hex	filename
+   1880	      8	   1584	   3472	    d90	13_i2c_BMp180.elf
+Finished building: 13_i2c_BMp180.list
+Finished building: default.size.stdout
+ 
+ 
+11:56:50 **** Incremental Build of configuration Debug for project 13_i2c_BMp180 ****
+make -j4 all 
+arm-none-eabi-size   13_i2c_BMp180.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1880	      8	   1584	   3472	    d90	13_i2c_BMp180.elf
+Finished building: default.size.stdout
+ 

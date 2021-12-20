@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;13_i2c_BMp180/Inc/b,p180.h&apos; to &apos;bmp180.h&apos;" description="Rename resource &apos;b,p180.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/b,p180.h" name="bmp180.h" stamp="1639980417564" updateReferences="true"/>
+</session>

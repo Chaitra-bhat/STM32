@@ -1,8 +1,0 @@
-/*
- * adc.c
- *
- *  Created on: Dec 19, 2021
- *      Author: Navjeevan
- */
-#include<adc.h>
-
