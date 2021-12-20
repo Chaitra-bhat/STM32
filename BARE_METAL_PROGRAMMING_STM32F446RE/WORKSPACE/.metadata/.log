@@ -671,3 +671,21 @@ org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$CyclicP
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-12-19 20:44:12.141
 !MESSAGE Indexed '11_adc_continuos_conversion' (5 sources, 65 headers) in 1.64 sec: 3,048 declarations; 4,058 references; 4 unresolved inclusions; 30 syntax errors; 709 unresolved names (9.1%)
+!SESSION 2021-12-20 08:37:37.877 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-12-20 08:38:04.479
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-12-20 08:38:04.965
+!MESSAGE Log4j initialized with config file C:\Users\Navjeevan\OneDrive\Documents\GitHub\STM32\BARE_METAL_PROGRAMMING_STM32F446RE\WORKSPACE\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-12-20 08:38:21.105
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-12-20 08:38:25.142
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
