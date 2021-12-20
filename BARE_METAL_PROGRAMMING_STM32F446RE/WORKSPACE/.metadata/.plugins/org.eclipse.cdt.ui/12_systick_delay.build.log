@@ -1,0 +1,27 @@
+10:01:52 **** Incremental Build of configuration Debug for project 12_systick_delay ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/Navjeevan/OneDrive/Documents/GitHub/STM32/BARE_METAL_PROGRAMMING_STM32F446RE/OTHERS/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:3:
+../Inc/uart.h:26:13: warning: 'setBaudrate' declared 'static' but never defined [-Wunused-function]
+   26 | static void setBaudrate(USART_TypeDef *USARTx, uint32_t PeriphClock, uint32_t Baudrate);
+      |             ^~~~~~~~~~~
+../Inc/uart.h:27:17: warning: 'compute_uart_baudrate' declared 'static' but never defined [-Wunused-function]
+   27 | static uint16_t compute_uart_baudrate(uint32_t PeriphClock, uint32_t Baudrate);
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "12_systick_delay.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Navjeevan\OneDrive\Documents\GitHub\STM32\BARE_METAL_PROGRAMMING_STM32F446RE\WORKSPACE\12_systick_delay\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_systick_delay.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12_systick_delay.elf
+ 
+arm-none-eabi-objdump -h -S  12_systick_delay.elf  > "12_systick_delay.list"
+arm-none-eabi-objcopy  -O binary  12_systick_delay.elf  "12_systick_delay.bin"
+arm-none-eabi-size   12_systick_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5572	    108	   1596	   7276	   1c6c	12_systick_delay.elf
+Finished building: default.size.stdout
+ 
+Finished building: 12_systick_delay.bin
+Finished building: 12_systick_delay.list
+ 
+ 
+
+10:01:53 Build Finished. 0 errors, 2 warnings. (took 1s.89ms)
+

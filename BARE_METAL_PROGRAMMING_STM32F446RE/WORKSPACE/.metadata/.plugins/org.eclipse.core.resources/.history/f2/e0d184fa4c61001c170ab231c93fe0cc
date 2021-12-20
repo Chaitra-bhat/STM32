@@ -1,0 +1,24 @@
+//driver specific header files
+#include<adc.h>
+#include<uart.h>
+#include<systick.h>
+
+// SOme additonal header files
+#include<stdint.h>
+#include<stdio.h>
+#include<stm32f4xx.h>
+
+int sensor_value;
+
+int main(void)
+{
+	usart2_txRx_init();
+
+	while(1)
+	{
+
+		sensor_value = adc_read();
+		printf("ADC conversion value: %d \n\r", sensor_value);
+	}
+
+}
